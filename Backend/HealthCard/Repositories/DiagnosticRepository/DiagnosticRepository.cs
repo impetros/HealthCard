@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using ProiectMDS.Contexts;
 using ProiectMDS.Models;
 
@@ -22,11 +23,17 @@ namespace ProiectMDS.Repositories.DiagnosticRepository
         }
         public Diagnostic Get(int Id)
         {
-            return _context.Diagnostice.SingleOrDefault(x => x.DiagnosticId == Id);
+            return _context.Diagnostice
+                .Include("Pacient")
+                .Include("Doctor")
+                .SingleOrDefault(x => x.DiagnosticId == Id);
         }
         public List<Diagnostic> GetAll()
         {
-            return _context.Diagnostice.ToList();
+            return _context.Diagnostice
+                .Include("Pacient")
+                .Include("Doctor")
+                .ToList();
         }
         public Diagnostic Update(Diagnostic Diagnostic)
         {
