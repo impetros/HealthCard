@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MDS\\Git\\merge\\Backend\\HealthCard\\ProiectMDS.csproj",
-      "projectName": "ProiectMDS",
-      "projectPath": "E:\\MDS\\Git\\merge\\Backend\\HealthCard\\ProiectMDS.csproj",
+      "projectUniqueName": "E:\\MDS\\Git\\merge\\HealthCard.csproj",
+      "projectName": "HealthCard",
+      "projectPath": "E:\\MDS\\Git\\merge\\HealthCard.csproj",
       "packagesPath": "C:\\Users\\sargs\\.nuget\\packages\\",
-      "outputPath": "E:\\MDS\\Git\\merge\\Backend\\HealthCard\\obj\\",
+      "outputPath": "E:\\MDS\\Git\\merge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
