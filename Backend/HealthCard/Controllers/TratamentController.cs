@@ -8,6 +8,7 @@ using ProiectMDS.Repositories.TratamentRepository;
 namespace ProiectMDS.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class TratamentController : ControllerBase
     {
         public ITratamentRepository ITratamentRepository { get; set; }

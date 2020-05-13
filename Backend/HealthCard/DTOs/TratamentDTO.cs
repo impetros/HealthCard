@@ -7,7 +7,6 @@ namespace ProiectMDS.Models
 {
     public class TratamentDTO
     {
-        public int TratamentId { get; set; }
 
         public int DiagnosticId { get; set; }
 

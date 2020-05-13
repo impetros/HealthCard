@@ -14,6 +14,7 @@ using ProiectMDS.Repositories.PacientRepository;
 namespace ProiectMDS.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class PacientController : ControllerBase
     {
         public IPacientRepository IPacientRepository { get; set; }
