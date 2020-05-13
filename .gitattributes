@@ -1,0 +1,3 @@
+*.cs linguist-language=C#
+*.js linguist-language=TypeScript
+*.ts linguist-language=TypeScript
